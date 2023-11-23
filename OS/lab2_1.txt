@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <sys/time.h>
+
+void print_time() {
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    printf("%ld:%ld:%ld:%ld\n", tv.tv_sec / 3600, (tv.tv_sec % 3600) / 60, tv.tv_sec % 60, tv.tv_usec / 1000);
+}
+
+int main() {
+    pid_t child_pid1, child_pid2;
+    
+    child_pid1 = fork();
+    if (child_pid1 == 0) {
+        // Первый дочерний процесс
+        printf("Child 1 PID: %d, Parent PID: %d, Time: ", getpid(), getppid());
+        print_time();
+        exit(0);
+    } else if (child_pid1 < 0) {
+        perror("Fork failed");
+        exit(1);
+    } else {
+        // Родительский процесс
+        child_pid2 = fork();
+        if (child_pid2 == 0) {
+            // Второй дочерний процесс
+            printf("Child 2 PID: %d, Parent PID: %d, Time: ", getpid(), getppid());
+            print_time();
+            exit(0);
+        } else if (child_pid2 < 0) {
+            perror("Fork failed");
+            exit(1);
+        } else {
+            // Родительский процесс
+            int status;
+            waitpid(child_pid1, &status, 0);
+            waitpid(child_pid2, &status, 0);
+
+            // Выполнение команды "ps -x" с помощью системного вызова
+            system("ps -x");
+
+            printf("Parent PID: %d, Time: ", getpid());
+            print_time();
+        }
+    }
+
+    return 0;
+}
