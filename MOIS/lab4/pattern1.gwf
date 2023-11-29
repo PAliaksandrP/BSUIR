@@ -1,1 +1,34 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/perm/struct" idtf="section_subject_domain_of_math" shapeColor="193" id="1840159908848" parent="1840159860768" left="0" top="0" right="325" bottom="33" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="116.5" y="430.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/perm/relation" idtf="nrel_section_decomposition" shapeColor="0" id="1840162339392" parent="1840159860768" left="0" top="0" right="275" bottom="33" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="309.5" y="281.5" haveBus="false" idtf_pos="3">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/tuple" idtf="" shapeColor="0" id="1840162336896" parent="1840159860768" x="506" y="432" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/perm/struct" idtf="" shapeColor="0" id="1840162338768" parent="1840159860768" x="744" y="306" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/var/-/perm/orient" idtf="" shapeColor="0" id="1840162520592" parent="1840159860768" id_b="1840162336896" id_e="1840159908848" b_x="506" b_y="432" e_x="116.5" e_y="430.5" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1840162520352" parent="1840159860768" id_b="1840162339392" id_e="1840162520592" b_x="309.5" b_y="281.5" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.503356">
+            <points/>
+        </pair>
+        <pair type="pair/var/pos/perm/orient/membership" idtf="" shapeColor="0" id="1840162517712" parent="1840159860768" id_b="1840162336896" id_e="1840162338768" b_x="506" b_y="432" e_x="744" e_y="306" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="contour/const/perm" idtf="pattern1" shapeColor="255" id="1840159860768" parent="0" left="0" top="0" right="87" bottom="33" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="-351" idtf_pos_y="-125">
+            <points>
+                <point x="79" y="206"/>
+                <point x="78" y="495"/>
+                <point x="801" y="491"/>
+                <point x="800" y="203"/>
+            </points>
+        </contour>
+    </staticSector>
+</GWF>
