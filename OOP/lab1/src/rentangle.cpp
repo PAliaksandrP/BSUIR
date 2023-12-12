@@ -49,7 +49,7 @@ void  rentangle::get() {
 * @return true если координаты равны, иначе false
 */
 bool  rentangle::operator ==(const rentangle& other) {
-    return this->x1_ == other.x1_ || this->x2_ == other.x2_ || this->y1_ == other.y1_ || this->y2_ == other.y2_;//abs(this->x1_ - this->x2_) == abs(other.x1_ - other.x2_) && abs(this->y1_ - this->y2_) == abs(other.y1_ - other.y2_);
+    return this->x1_ == other.x1_ && this->x2_ == other.x2_ && this->y1_ == other.y1_ && this->y2_ == other.y2_;//abs(this->x1_ - this->x2_) == abs(other.x1_ - other.x2_) && abs(this->y1_ - this->y2_) == abs(other.y1_ - other.y2_);
 }
 /**
 * @brief ќператор равенства

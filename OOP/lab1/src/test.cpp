@@ -118,3 +118,10 @@ TEST(TestRentangle, TestAssigment) {
 	EXPECT_TRUE(a == b);
 	EXPECT_TRUE(true);
 }
+TEST(TestRentangle, TestMinusMinus3) {
+	rentangle a(0, 0, 4, 4);
+	rentangle b(0, 0, 3, 3);
+
+	EXPECT_FALSE(a == b);
+	EXPECT_TRUE(true);
+}
