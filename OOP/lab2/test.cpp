@@ -91,6 +91,8 @@ TEST(TestAdministrator, TestFuncAdministrator) {
 	Person *ad = &admin;
 	EXPECT_EQ(hotel.get_list_of_personal(), personals);
 	EXPECT_EQ(hotel.add_personal(*ad),true);
+	personals.push_back(ad);
+	EXPECT_EQ(hotel.get_list_of_personal(), personals);
 	EXPECT_EQ(hotel.get_name(), "blu");
 	EXPECT_EQ(hotel.get_hotel_rooms()[0].get_number(), hotel_rooms[0].get_number());
 	EXPECT_EQ(hotel.get_room(), rooms);
