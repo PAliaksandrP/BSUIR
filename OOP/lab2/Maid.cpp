@@ -5,8 +5,8 @@ Maid::Maid(string last_name, string first_name, bool sex, bool clothes_capacity,
 }
 
 bool Maid::clean_room(Room& room) {
-    if (room.capacity_) {
-        room.capacity_ = false;
+    if (room.poor_) {
+        room.poor_ = false;
         return true;
     }
     else {
@@ -15,8 +15,8 @@ bool Maid::clean_room(Room& room) {
 }
 
 bool Maid::clean_clothes(Person& person) {
-    if (person.clothes_capacity_) {
-        person.clothes_capacity_ = false;
+    if (person.clothes_poor_) {
+        person.clothes_poor_ = false;
         return true;
     }
     else {

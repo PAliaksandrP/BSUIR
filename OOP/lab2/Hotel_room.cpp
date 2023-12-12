@@ -26,8 +26,13 @@ string Hotel_room::choose_type(int n) {
 	return type_;
 }
 string Hotel_room::get_visitor() {
-	string name = visitor_.last_name_ + " " + visitor_.first_name_;
+	string name = visitor_.get_name();
 	return name;
+}
+
+int Hotel_room::get_number()
+{
+	return number_;
 }
 
 bool Hotel_room::add_visitor(Visitor visitor)

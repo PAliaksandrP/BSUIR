@@ -28,6 +28,10 @@ bool Play_room::play_game(string game) {
     }
     return false;
 }
+vector<string> Play_room::get_games()
+{
+    return games_;
+}
 bool Play_room::add_game(string game) {
     // string name_game;
     // cout<<"input name game:"

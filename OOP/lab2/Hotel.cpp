@@ -19,6 +19,22 @@ Hotel& Hotel::operator=(Hotel& other)
 vector<Person*> Hotel::get_list_of_personal() {
 	return personals_;
 }
+string Hotel::get_name()
+{
+	return name_;
+}
+int Hotel::get_number_rooms()
+{
+	return number_rooms_;
+}
+vector<Hotel_room> Hotel::get_hotel_rooms()
+{
+	return hotel_rooms_;
+}
+vector<Room*> Hotel::get_room()
+{
+	return rooms_;
+}
 bool Hotel::add_personal(Person& personal) {
 	personals_.push_back(&personal);
 	return true;

@@ -7,9 +7,12 @@
 using namespace std;
 class Play_room :  public Room
 {
-public:
+private:
     vector<string> games_;
+public:
+    //vector<string> games_;
     bool play_game(string game);
+    vector<string> get_games();
     Play_room(bool poor, int capacity, vector<string>games);
     Play_room();
     Play_room& operator=(Play_room& other);

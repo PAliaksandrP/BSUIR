@@ -12,3 +12,7 @@ Room& Room::operator=(Room& other)
 	this->poor_ = other.poor_;
 	return *this;
 }
+
+int Room::get_capacity() {
+	return capacity_;
+}

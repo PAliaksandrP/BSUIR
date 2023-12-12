@@ -8,8 +8,19 @@ Cafe::Cafe(){}
 vector<string> Cafe::get_menu() {
 	return menu_;
 }
-int Cafe::add_tables(int n) {
+void Cafe::set_menu(string dish)
+{
+	menu_.push_back(dish);
+}
+void Cafe::del_menu(int n) {
+	menu_.erase(menu_.begin() + n);
+}
+void Cafe::add_tables(int n) {
 	number_tables_ += n;
+}
+
+int Cafe::get_tables()
+{
 	return number_tables_;
 }
 
