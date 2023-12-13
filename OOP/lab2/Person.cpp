@@ -16,7 +16,7 @@ Person& Person::operator=(Person& other)
     this->last_name_ = other.last_name_;
     this->location_ = other.location_;
     this->sex_ = other.sex_;
-    this->rang_ = other.rang_;
+
     return *this;
 }
 bool Person::reset_place(string new_place) {
@@ -28,10 +28,7 @@ bool Person::reset_place(string new_place) {
 string Person::get_name() {
     return last_name_ + " " + first_name_;
 }
-string Person::get_rang()
-{
-    return rang_;
-}
+
 string Person::get_location()
 {
     return location_;

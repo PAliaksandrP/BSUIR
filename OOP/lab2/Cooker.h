@@ -3,9 +3,9 @@
 #include"Cafe.h"
 #include<iostream>
 #include<string>
-
+#include"Rangable.h"
 using namespace std;
-class Cooker :  public Person
+class Cooker :  public Person,public Rangable
 {
 private:
     Cafe work_;

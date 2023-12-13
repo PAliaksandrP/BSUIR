@@ -1,7 +1,7 @@
 #include "Administrator.h"
 
-Administrator::Administrator(string last_name, string first_name, bool sex, bool clothes_capacity, string location,  string rang,Hotel hotel) :Person(last_name, first_name, sex, clothes_capacity, location) {
-	this->rang_ = rang;
+Administrator::Administrator(string last_name, string first_name, bool sex, bool clothes_capacity, string location,  string rang,Hotel hotel) :Person(last_name, first_name, sex, clothes_capacity, location), Rangable(rang) {
+
 	this->hotel_ = hotel;
 }
 bool Administrator::invite(Visitor& visitor, int number) {

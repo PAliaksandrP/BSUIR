@@ -1,7 +1,7 @@
 #include "Maid.h"
 
-Maid::Maid(string last_name, string first_name, bool sex, bool clothes_capacity, string location,string rang) :Person(last_name, first_name, sex, clothes_capacity, location) {
-    this->rang_ = rang;
+Maid::Maid(string last_name, string first_name, bool sex, bool clothes_capacity, string location,string rang) :Person(last_name, first_name, sex, clothes_capacity, location), Rangable(rang) {
+
 }
 
 bool Maid::clean_room(Room& room) {

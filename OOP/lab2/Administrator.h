@@ -3,11 +3,12 @@
 #include"Hotel_room.h"
 #include"Visitor.h"
 #include"Hotel.h"
+#include"Rangable.h"
 #include<string>
 #include<iostream>
 
 using namespace std;
-class Administrator :  public Person
+class Administrator :  public Person,public Rangable
 {
 private:
     Hotel hotel_;

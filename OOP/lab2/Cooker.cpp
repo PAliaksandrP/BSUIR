@@ -1,7 +1,7 @@
 #include "Cooker.h"
 
-Cooker::Cooker(string last_name, string first_name, bool sex, bool clothes_capacity, string location, string rang, Cafe work) :Person(last_name, first_name, sex, clothes_capacity, location) {
-    rang_ = rang;
+Cooker::Cooker(string last_name, string first_name, bool sex, bool clothes_capacity, string location, string rang, Cafe work) :Person(last_name, first_name, sex, clothes_capacity, location),Rangable(rang) {
+
     work_ = work;
 }
 Cafe Cooker::get_cafe()
