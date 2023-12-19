@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GWF version="2.0">
     <staticSector>
-        <contour type="contour/const/perm" idtf="test4" shapeColor="0" id="2228751709472" parent="0" left="0" top="0" right="55" bottom="33" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="265" idtf_pos_y="-134">
+        <contour type="contour/const/perm" idtf="test6" shapeColor="193" id="2700844256816" parent="0" left="0" top="0" right="55" bottom="33" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="265" idtf_pos_y="-134">
             <points>
                 <point x="54.5" y="171.36"/>
                 <point x="23.5" y="749.36"/>
