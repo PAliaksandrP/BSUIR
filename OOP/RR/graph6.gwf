@@ -19,7 +19,7 @@
         <pair type="pair/const/-/perm/noorien" idtf="" shapeColor="0" id="2145576425024" parent="2145572516944" id_b="2145573742560" id_e="2145576726128" b_x="244" b_y="368" e_x="225" e_y="499" dotBBalance="0" dotEBalance="0">
             <points/>
         </pair>
-        <contour type="contour/const/perm" idtf="test6" shapeColor="0" id="2145572516944" parent="0" left="0" top="0" right="55" bottom="33" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="362" idtf_pos_y="-257">
+        <contour type="contour/const/perm" idtf="test4" shapeColor="0" id="2145572516944" parent="0" left="0" top="0" right="55" bottom="33" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" idtf_pos_x="362" idtf_pos_y="-257">
             <points>
                 <point x="-56" y="224"/>
                 <point x="-87" y="802"/>
